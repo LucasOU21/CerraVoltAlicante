@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --gold: #c9a227;
+  --gold-bright: #e8c65a;
+  --gold-deep: #8b6b14;
+  --ink: #1b1610;
+  --ink-soft: #4d4336;
+  --sand: #f4ebe0;
+  --cream: #fff8ee;
+  --paper: #fbf6ed;
+  --terracotta: #c45c26;
+  --sunset: #e07a3d;
+  --dusk: #14110e;
+  --sea: #1f4d5c;
+}
+
+@theme inline {
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-gold-deep: var(--gold-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-sand: var(--sand);
+  --color-cream: var(--cream);
+  --color-paper: var(--paper);
+  --color-terracotta: var(--terracotta);
+  --color-sunset: var(--sunset);
+  --color-dusk: var(--dusk);
+  --color-sea: var(--sea);
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-script: var(--font-caveat), ui-sans-serif, cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gold) 45%, white);
+  color: var(--ink);
+}
+
+.grain {
+  position: relative;
+}
+
+.grain::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.09;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold-bright),
+    var(--gold),
+    var(--gold-bright),
+    transparent
+  );
+}
+
+details.faq > summary {
+  list-style: none;
+}
+
+details.faq > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.faq[open] .faq-chevron {
+  transform: rotate(180deg);
+  color: var(--gold);
+}

@@ -9,12 +9,12 @@ export const site = {
   country: "ES",
   phoneDisplay: "644 098 546",
   phoneTel: "+34644098546",
-  whatsapp: "https://wa.me/34644098546",
+  whatsapp: "https://wa.me/34641415681",
   repo: "https://github.com/LucasOU21/CerraVoltAlicante",
   seo: {
     title: "CerraVolt | Cerrajero y electricista en Alicante 24h",
     description:
-      "Cerrajería y electricidad en Alicante. Apertura de puertas, reparación de cerraduras, instalaciones y averías eléctricas. Llama o escribe por WhatsApp al 644 098 546.",
+      "Cerrajería y electricidad en Alicante. Apertura de puertas, reparación de cerraduras, instalaciones y averías eléctricas. Llama al 644 098 546 o escríbenos por WhatsApp.",
     keywords: [
       "cerrajero Alicante",
       "electricista Alicante",
@@ -79,7 +79,7 @@ export const site = {
   faqs: [
     {
       q: "¿Atendéis urgencias por la noche o en festivo?",
-      a: "Sí. El servicio de cerrajería y electricidad está disponible las 24 horas. Llama o escribe por WhatsApp al 644 098 546 y te confirmamos la llegada.",
+      a: "Sí. El servicio de cerrajería y electricidad está disponible las 24 horas. Llama al 644 098 546 o escríbenos por WhatsApp y te confirmamos la llegada.",
     },
     {
       q: "¿Abrís la puerta sin romperla?",
